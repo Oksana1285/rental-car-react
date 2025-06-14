@@ -1,25 +1,35 @@
-import css from './App.module.css';
+import { lazy } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
-import ContactForm from './components/ContactForm/ContactForm';
-import ContactList from './components/ContactList/ContactList';
-import SearchBox from './components/SearchBox/SearchBox';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchContacts } from './redux/contactsOps';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import SharedLayout from './shared/componets/SharedLayout/SharedLayout';
+import { useModalContext } from './context/useModalContext';
+import ModalWindow from './shared/componets/ModalWindow/ModalWindow';
+
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage/CatalogPage'));
+const FavoritePage = lazy(() => import('./pages/CarPage/CarPage'));
+
+AOS.init();
 
 const App = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchContacts());
-  }, [dispatch]);
-
+  const { isOpen, modalContent } = useModalContext();
   return (
     <>
-      <h1 className={css.title}>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
-      <ContactList />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+
+          <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/favorite" element={<FavoritePage />} />
+
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+
+      <ModalWindow isOpen={isOpen}>{modalContent}</ModalWindow>
     </>
   );
 };

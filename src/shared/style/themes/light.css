@@ -1,0 +1,26 @@
+.light-theme {
+  --color-main-text: #101828;
+  --color-light-text: rgba(16, 24, 40, 0.6);
+  --color-categories: #f2f4f7;
+  --color-main-button: #3470ff;
+  --color-main-button-hover: #0b44cd;
+  --color-input: ##8d929a;
+  --color-filter: #101828;
+  /* --color-stars: #ffc531; */
+  --color-white: #ffffff;
+  --color-scroll: #d9d9d9;
+  --color-white-alfa: rgba(255, 255, 255, 0.7);
+  --color-border-button: rgba(71, 84, 103, 0.2);
+  --color-line: rgba(16, 24, 40, 0.1);
+  --color-backdrop: #111111b3;
+  --color-shadow: rgba(0, 0, 0, 0.25);
+  --color-map: #000;
+
+  --toggle-bg-color: #f1c40f;
+  --toggle-bg-color-checked: #34495e;
+  --toggle-switch-color: #fff;
+  --toggle-sun-color: #f39c12;
+  --toggle-moon-color: #ecf0f1;
+  --toggle-sun-color-checked: #ecf0f1;
+  --toggle-moon-color-checked: #f39c12;
+}

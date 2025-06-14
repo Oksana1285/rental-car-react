@@ -1,0 +1,26 @@
+.blockWrap {
+  margin-bottom: 24px;
+}
+
+.listImages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardImg {
+  width: 340px;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 60% 50%;
+}
+
+.textDescription {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-filter);
+
+  margin-bottom: 15px;
+}

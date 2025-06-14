@@ -1,0 +1,34 @@
+.buttonBase {
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  padding: 8px 32px;
+  transition: background-color var(--animation), border-color var(--animation),
+    transform var(--animation);
+}
+
+.buttonMain {
+  color: var(--color-white);
+  background-color: var(--color-main-button);
+  border: transparent;
+}
+
+.buttonMain:hover,
+.buttonMain:active {
+  background-color: var(--color-main-button-hover);
+  transform: scale(1.05);
+}
+
+.buttonLoad {
+  color: var(--color-main-text);
+  background-color: transparent;
+  border: 1px solid var(--color-main-button-hover);
+}
+
+.buttonLoad:hover,
+.buttonLoad:active {
+  border-color: var(--color-main-button);
+  transform: scale(1.05);
+}

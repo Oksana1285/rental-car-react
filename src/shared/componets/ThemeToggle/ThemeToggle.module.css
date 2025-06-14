@@ -1,0 +1,80 @@
+.toggleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 60px;
+    height: 30px;
+    background: var(--toggle-bg-color);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.label:active .switch {
+    width: 45px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+}
+
+.inner::before {
+    content: '';
+    color: var(--toggle-sun-color);
+    transition: color 0.3s ease;
+}
+
+.inner::after {
+    content: '';
+    color: var(--toggle-moon-color);
+    transition: color 0.3s ease;
+}
+
+.switch {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: var(--toggle-switch-color);
+    border-radius: 90px;
+    transition: 0.3s ease;
+}
+
+.checkbox:checked+.label {
+    background: var(--toggle-bg-color-checked);
+}
+
+.checkbox:checked+.label .switch {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+}
+
+.checkbox:checked+.label .inner::before {
+    color: var(--toggle-sun-color-checked);
+}
+
+.checkbox:checked+.label .inner::after {
+    color: var(--toggle-moon-color-checked);
+}

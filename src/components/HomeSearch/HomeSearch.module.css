@@ -1,0 +1,54 @@
+.homeSearch {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%) scale(1);
+    z-index: 3;
+
+    background-color: var(--color-white-alfa);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px 0 rgba(19, 94, 172, 0.12);
+
+    padding: 12px 32px;
+    width: fit-content;
+    min-width: 300px;
+    white-space: nowrap;
+}
+
+.homeSearchList {
+    display: flex;
+
+}
+
+.homeSearchItems {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+    padding: 0 26px;
+}
+
+.borderLine {
+    border-left: 1px solid var(--color-light-text);
+    border-right: 1px solid var(--color-light-text);
+}
+
+.iconHome {
+    width: 32px;
+    height: 32px;
+    stroke: var(--color-light-text);
+    fill: transparent;
+}
+
+.homeSearchTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.homeSearchText {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-light-text);
+}

@@ -1,0 +1,200 @@
+.strokeStyle {
+  fill: var(--color-main-text);
+}
+
+.fillStyle {
+  stroke: var(--color-main-text);
+  fill: transparent;
+}
+
+.locationfield {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.labelLocation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-light-text);
+}
+
+.blockInput {
+  position: relative;
+}
+
+.formInput {
+  width: 100%;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 48px;
+  border: 1px solid var(--color-input);
+  color: var(--color-main-text);
+  outline: transparent;
+  background-color: var(--color-input);
+  transition: border var(--animation);
+}
+
+.formInput:focus,
+.formInput:hover {
+  border-color: var(--color-stars);
+}
+
+.formInput:focus + .iconMap,
+.formInput:hover + .iconMap {
+  fill: var(--color-stars);
+  stroke: var(--color-map);
+}
+
+.errorName {
+  border-color: var(--color-main-button);
+}
+
+.errorSpan {
+  font-size: 12px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: var(--color-main-button);
+}
+
+.iconMap {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 18px;
+  height: 20px;
+  transition: fill var(--animation), stroke var(--animation);
+}
+
+.iconClean {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
+
+  transition: fill var(--animation);
+}
+
+.equipment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+
+  margin-bottom: 20px;
+}
+
+.equipmentTitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.labelCheck {
+  cursor: pointer;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border: 1px solid var(--color-light-text);
+  border-radius: 10px;
+  padding: 10px 8px;
+  transition: border var(--animation);
+}
+
+.labelCheck:hover {
+  border: 1px solid var(--color-stars);
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkedLabelCheck {
+  border: 1px solid var(--color-main-button);
+}
+
+.formInput:-webkit-autofill,
+.formInput:-webkit-autofill:hover,
+.formInput:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-main-text);
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: var(--color-input);
+}
+
+.labelFilters {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-filter);
+
+  margin-bottom: 5px;
+}
+
+.formTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 24px;
+}
+
+.iconEquipment {
+  width: 20px;
+  height: 20px;
+}
+
+.iconType {
+  width: 30px;
+  height: 20px;
+}
+
+.labelRadio {
+  cursor: pointer;
+  width: 90px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--color-light-text);
+  border-radius: 10px;
+  padding: 0 24px;
+  transition: border var(--animation);
+}
+
+.labelRadio:hover {
+  border: 1px solid var(--color-stars);
+}
+
+.radioLabelCheck {
+  border: 1px solid var(--color-main-button);
+}
+
+.containerBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.searchBtn {
+  padding: 15px;
+}

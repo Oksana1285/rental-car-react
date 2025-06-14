@@ -1,0 +1,43 @@
+.strokeStyle {
+  fill: var(--color-main-text);
+}
+
+.fillStyle {
+  stroke: var(--color-main-text);
+  fill: transparent;
+}
+
+.categoriesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.featuresTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  border-bottom: 1px solid var(--color-line);
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailsItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+}

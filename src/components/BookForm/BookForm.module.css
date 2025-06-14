@@ -1,0 +1,115 @@
+.formPart {
+    border: 1px solid var(--color-border-button);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.formText {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-filter);
+    margin-bottom: 24px;
+}
+
+.formBoking {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.fieldThumb {
+    position: relative;
+}
+
+.fieldThumb .datePickerInput {
+    display: block;
+    width: 100%;
+}
+
+.formInput {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--color-input);
+    background-color: var(--color-input);
+    outline: transparent;
+    color: var(--color-main-text);
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 18px;
+    transition: border var(--animation), background-color var(--animation);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.formInput:focus,
+.formInput:hover {
+    border-color: var(--color-stars);
+}
+
+.formInput::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.iconCalendar {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    stroke: var(--color-main-text);
+    fill: transparent;
+    transition: fill var(--animation);
+}
+
+.formLabel {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    transition: top var(--animation), font-size var(--animation), color var(--animation);
+    pointer-events: none;
+    color: var(--color-light-text);
+}
+
+.formInput:focus+.formLabel,
+.formInput:not(:placeholder-shown)+.formLabel {
+    top: -8px;
+    left: 15px;
+    font-size: 14px;
+    color: var(--color-main-text);
+}
+
+.textarea {
+    resize: none;
+    height: 100px;
+}
+
+.errorInput {
+    border-color: var(--color-main-button);
+}
+
+.errorSpan {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: var(--color-main-button);
+    min-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.searchBtn {
+    width: 100%;
+    padding: 15px;
+}
+

@@ -1,0 +1,131 @@
+.cardCar {
+  border: 1px solid var(--color-light-text);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.cardImg {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.carInfoThumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.carTitle {
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+
+  margin-bottom: 5px;
+}
+
+.carPrice {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.carReviewsThumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-bottom: 5px;
+}
+
+.carThumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.carReviewsText {
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.carLocationText {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.iconHeart {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-main-text);
+  fill: transparent;
+  transition: all var(--animation);
+}
+
+.active {
+  animation: like 0.5s 1;
+  fill: var(--color-main-button);
+  stroke: transparent;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.categoriesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.strokeStyle {
+  fill: var(--color-main-text);
+}
+
+.fillStyle {
+  stroke: var(--color-main-text);
+  fill: transparent;
+}
+
+.textDescription {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-filter);
+
+  margin-bottom: 15px;
+}
+
+.carBtn {
+  width: 100%;
+  padding: 15px;
+}

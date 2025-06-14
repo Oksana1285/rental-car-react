@@ -1,0 +1,14 @@
+.header {
+  padding: 5px 16px;
+}
+
+.navigation {
+  position: relative;
+  height: 60px;
+  display: flex;
+}
+
+.logo {
+  width: 90px;
+  height: 60px;
+}

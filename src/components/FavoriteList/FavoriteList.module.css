@@ -1,0 +1,136 @@
+.favorite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.favoriteList {
+  display: grid;
+  grid-template-columns: repeat(1, 300px);
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.favoriteItem {
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px 0 var(--color-shadow);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.iconHeart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  stroke: var(--color-main-text);
+  fill: transparent;
+  transition: all var(--animation);
+}
+
+.active {
+  animation: like 0.5s 1;
+  fill: var(--color-main-button);
+  stroke: transparent;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.favoriteImgContainer {
+  width: 316px;
+  height: 239px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 37px;
+}
+
+.favoriteImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 50%;
+}
+
+.favoriteImgContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 48.5%,
+    var(--color-filter) 100%
+  );
+  pointer-events: none;
+}
+
+.favoriteMainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.favoriteTitle {
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.favoritePrice {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.loadMore {
+  width: 100%;
+  padding: 15px;
+}
+
+.emptyPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.emptyTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: center;
+}

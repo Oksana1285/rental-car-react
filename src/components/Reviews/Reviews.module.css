@@ -1,0 +1,49 @@
+.thumb {
+    height: 525px;
+    padding-right: 15px;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nameBlock {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 16px;
+}
+
+.nameFirstLetter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: var(--color-categories);
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--color-main-button);
+}
+
+.name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+
+    margin-bottom: 4px;
+}
+
+.review {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: var(--color-filter);
+}

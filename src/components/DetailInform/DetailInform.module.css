@@ -1,0 +1,112 @@
+.mainInfoThumb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.carTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.carReviewsThumb {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.carThumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.carReviewsText {
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.carLocationText {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.fillStyle {
+  stroke: var(--color-main-text);
+  fill: transparent;
+}
+
+.carPrice {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.container {
+  height: calc(90vh - 180px);
+  padding-right: 15px;
+}
+
+.addInfromList {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.addInfromList::after {
+  width: 100%;
+  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--color-line);
+  bottom: 1px;
+}
+
+.addInfromItem {
+  position: relative;
+  padding: 0 24px 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  transition: font-weight var(--animation);
+}
+
+.addInfromItem::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--color-main-button);
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.addInfromItem:hover::before {
+  left: 0;
+  right: 0;
+}
+
+.active {
+  position: relative;
+  font-weight: 600;
+}
+
+.active::before {
+  left: 0;
+  right: 0;
+}

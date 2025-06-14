@@ -1,0 +1,20 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-categories);
+  border-radius: 100px;
+  padding: 12px 18px;
+}
+
+.categories .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+}

@@ -1,0 +1,61 @@
+.homeTitle {
+  position: relative;
+  z-index: 2;
+  padding: 0 16px;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../shared/images/homeBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* display: flex; */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.homeTitleBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* gap: 16px; */
+  max-width: 100hv;
+  padding-top: 440px;
+  margin: auto;
+}
+
+.homeMainTitle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.homeMainText {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.homeBtn {
+  padding-top: 40px;
+}
+
+.textBtn {
+  color: #ffffff;
+}

@@ -1,0 +1,12 @@
+.myScroll .os-scrollbar {
+    --os-size: 6px;
+    --os-track-bg: #f7f5ed;
+    --os-track-bg-hover: #f7f5ed;
+    --os-handle-bg: #d9d9d9;
+    --os-track-border-radius: 7px;
+    --os-handle-border-radius: 7px;
+
+    --os-handle-bg-hover: #475467;
+    --os-handle-bg-active: #475467;
+
+}
